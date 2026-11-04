@@ -1,1 +1,17 @@
 chenqun|paddlecloud/paddleocr:2.6-cpu-latest
+chenqun|homeassistant/home-assistant:latest
+chenqun|jxxghp/moviepilot-v2:latest
+chenqun|whyour/qinglong:latest
+chenqun|ghcr.io/thephaseless/byparr:latest
+chenqun|ghcr.io/suwayomi/suwayomi-server:preview
+chenqun|heavrnl/nexus-terminal-frontend:latest
+chenqun|heavrnl/nexus-terminal-backend:latest
+chenqun|heavrnl/nexus-terminal-remote-gateway:latest
+chenqun|guacamole/guacd:latest
+chenqun|songloft/songloft:latest
+chenqun|hanxi/cups:latest
+chenqun|ghcr.io/immich-app/immich-server:release
+chenqun|ghcr.io/immich-app/immich-machine-learning:release
+chenqun|qdnas/flatnas:latest
+chenqun|xcq0607/lxserver:latest
+chenqun|ghcr.io/usagi-org/ai-goofish:latest
