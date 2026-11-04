@@ -15,7 +15,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     env:
-      REGISTRY: registry.cn-beijing.aliyuncs.com
+      REGISTRY: registry.cn-hangzhou.aliyuncs.com
     steps:
       - name: Checkout
         uses: actions/checkout@v5
