@@ -1,21 +1,26 @@
 name: Sync Container Images to ACR
 
 on:
-  push:
-    branches:
-      - master
+  schedule:
+    # 每天北京时间 03:00 自动同步（UTC 前一天 19:00）
+    - cron: '0 19 * * *'
+
+  # 保留手动触发入口
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
   group: sync-images
+  cancel-in-progress: false
 
 jobs:
   sync:
     runs-on: ubuntu-latest
     env:
       REGISTRY: registry.cn-hangzhou.aliyuncs.com
+
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -40,10 +45,10 @@ jobs:
           DOCKERHUB_TOKEN: ${{ secrets.DOCKERHUB_TOKEN }}
         run: |
           if [ -n "${DOCKERHUB_USERNAME:-}" ] && [ -n "${DOCKERHUB_TOKEN:-}" ]; then
-            echo "Authenticating to Docker Hub (raises pull rate limit from 100 to 200 per 6h)"
+            echo "Authenticating to Docker Hub"
             skopeo login docker.io -u "$DOCKERHUB_USERNAME" -p "$DOCKERHUB_TOKEN"
           else
-            echo "Docker Hub credentials not configured, pulling anonymously (rate limit 100 per 6h per IP)"
+            echo "Docker Hub credentials not configured, pulling anonymously"
           fi
 
       - name: Sync images
