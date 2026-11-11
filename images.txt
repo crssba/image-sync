@@ -1,1 +1,1 @@
-chenqun|paddlecloud/paddleocr:2.6-cpu-latest
+ghcr.io/panda-995/tidewater:latest
