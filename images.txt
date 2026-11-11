@@ -1,1 +1,1 @@
-ghcr.io/panda-995/tidewater:latest
+chenqun|ghcr.io/panda-995/tidewater:latest
