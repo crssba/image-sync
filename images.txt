@@ -1,1 +1,1 @@
-chenqun|ghcr.io/panda-995/tidewater:latest
+chenqun|develop767/migu_video:latest
