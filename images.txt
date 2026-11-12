@@ -1,1 +1,1 @@
-chenqun|develop767/migu_video:latest
+akiralereal/iptv:latest
