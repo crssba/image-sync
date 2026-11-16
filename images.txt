@@ -1,1 +1,1 @@
-chenqun|ghcr.io/tsutomu-miku/mihomo-docker:latest
+chenqun|ghcr.io/bamboostrip/mihomo-sub:latest
