@@ -1,1 +1,1 @@
-chenqun|akiralereal/iptv:latest
+chenqun|daitcl/mihomo:latest
