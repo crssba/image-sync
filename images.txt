@@ -1,1 +1,1 @@
-chenqun|daitcl/mihomo:latest
+chenqun|ghcr.io/tsutomu-miku/mihomo-docker:latest
