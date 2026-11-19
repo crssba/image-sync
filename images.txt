@@ -1,1 +1,2 @@
-chenqun|ghcr.io/bamboostrip/mihomo-sub:latest
+chenqun|freebie-radar:latest
+chenqun|ghcr.io/flaresolverr/flaresolverr:latest
