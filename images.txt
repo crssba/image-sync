@@ -1,2 +1,2 @@
-chenqun|freebie-radar:latest
-chenqun|ghcr.io/flaresolverr/flaresolverr:latest
+chenqun|homeassistant/home-assistant:latest
+
