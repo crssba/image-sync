@@ -1,1 +1,1 @@
-chenqun|ghcr.io/home-assistant/home-assistant:stable
+chenqun|dpanel/dpanel:latest
