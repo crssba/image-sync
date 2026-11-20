@@ -105,13 +105,13 @@ sync_one() {
 		return 0
 	fi
 
-	if skopeo copy -a "docker://$source" "docker://$dest"; then
+	if skopeo copy -a --format v2s2 "docker://$source" "docker://$dest"; then
 		echo "✓ 同步 $source → $dest（多架构）"
 		return 0
 	fi
 
 	echo "！ 多架构失败，回退到 --override-arch amd64"
-	if ! skopeo copy --override-arch amd64 --override-os linux "docker://$source" "docker://$dest"; then
+	if ! skopeo copy --format v2s2 --override-arch amd64 --override-os linux "docker://$source" "docker://$dest"; then
 		echo "✗ 失败 $source → $dest（复制失败）"
 		return 1
 	fi
