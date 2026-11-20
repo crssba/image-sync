@@ -1,1 +1,1 @@
-chenqun|dpanel/dpanel:latest
+chenqun|dpanel/dpanel:lite
