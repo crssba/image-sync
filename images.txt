@@ -1,2 +1,1 @@
-chenqun|homeassistant/home-assistant:latest
-
+chenqun|ghcr.io/home-assistant/home-assistant:stable
